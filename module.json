@@ -1,0 +1,16 @@
+{
+    "name": "Timetrack",
+    "alias": "timetrack",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Admin\\Timetrack\\Providers\\TimetrackServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}
