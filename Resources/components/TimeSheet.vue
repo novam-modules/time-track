@@ -25,6 +25,13 @@ export default {
         return {
             assignments: {}
         }
+    },
+    mounted(){
+        let self = this;
+
+        axios.get(self.assignment-source)
+            .then(res => self.assignments = res.data)
+            .catch(err => errors = err.response.data || err.message );
     }
 }
 </script>
