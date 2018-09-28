@@ -20,7 +20,7 @@
 <script>
 export default {
     name: "time-sheet",
-    props: ['assignment-source'],
+    props: ['source'],
     data(){
         return {
             assignments: {}
@@ -29,7 +29,7 @@ export default {
     mounted(){
         let self = this;
 
-        axios.get(self.assignment-source)
+        axios.get(self.source)
             .then(res => self.assignments = res.data)
             .catch(err => errors = err.response.data || err.message );
     }
