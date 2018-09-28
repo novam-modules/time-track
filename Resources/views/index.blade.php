@@ -3,7 +3,7 @@
 @section('content')
     <h1>Hello World</h1>
 
-    <p>
-        This view is loaded from module: {!! config('timetrack.name') !!}
-    </p>
+    <div id="time-sheet" class="table-responsive">
+        <time-sheet :assigment-source="'/admin/projects/tasks'"></time-sheet>
+    </div>
 @stop
