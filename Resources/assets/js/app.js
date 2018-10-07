@@ -3,6 +3,6 @@ Vue.component('TimeClock', require('../../components/TimeClock.vue'))
 Vue.component('TimeSheet', require('../../components/TimeSheet.vue'))
 
 
-const timetrack = new Vue({
-    el: "#timetrack"
+const timetracker = new Vue({
+    el: "#timetracker"
 });

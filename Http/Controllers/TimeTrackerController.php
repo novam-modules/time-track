@@ -1,12 +1,12 @@
 <?php
 
-namespace Admin\Timetrack\Http\Controllers;
+namespace Admin\TimeTracker\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 
-class TimetrackController extends Controller
+class TimeTrackerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class TimetrackController extends Controller
      */
     public function index()
     {
-        return view('timetrack::index');
+        return view('timetracker::index');
     }
 
     /**
@@ -23,7 +23,7 @@ class TimetrackController extends Controller
      */
     public function create()
     {
-        return view('timetrack::create');
+        return view('timetracker::create');
     }
 
     /**
@@ -41,7 +41,7 @@ class TimetrackController extends Controller
      */
     public function show()
     {
-        return view('timetrack::show');
+        return view('timetracker::show');
     }
 
     /**
@@ -50,7 +50,7 @@ class TimetrackController extends Controller
      */
     public function edit()
     {
-        return view('timetrack::edit');
+        return view('timetracker::edit');
     }
 
     /**

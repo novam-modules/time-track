@@ -1,11 +1,11 @@
 <?php
 
-namespace Admin\Timetrack\Providers;
+namespace Admin\TimeTracker\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
 
-class TimetrackServiceProvider extends ServiceProvider
+class TimeTrackerServiceProvider extends ServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred.
@@ -46,10 +46,10 @@ class TimetrackServiceProvider extends ServiceProvider
     protected function registerConfig()
     {
         $this->publishes([
-            __DIR__.'/../Config/config.php' => config_path('timetrack.php'),
+            __DIR__.'/../Config/config.php' => config_path('timetracker.php'),
         ], 'config');
         $this->mergeConfigFrom(
-            __DIR__.'/../Config/config.php', 'timetrack'
+            __DIR__.'/../Config/config.php', 'timetracker'
         );
     }
 
@@ -60,7 +60,7 @@ class TimetrackServiceProvider extends ServiceProvider
      */
     public function registerViews()
     {
-        $viewPath = resource_path('views/modules/timetrack');
+        $viewPath = resource_path('views/modules/timetracker');
 
         $sourcePath = __DIR__.'/../Resources/views';
 
@@ -69,8 +69,8 @@ class TimetrackServiceProvider extends ServiceProvider
         ],'views');
 
         $this->loadViewsFrom(array_merge(array_map(function ($path) {
-            return $path . '/modules/timetrack';
-        }, \Config::get('view.paths')), [$sourcePath]), 'timetrack');
+            return $path . '/modules/timetracker';
+        }, \Config::get('view.paths')), [$sourcePath]), 'timetracker');
     }
 
     /**
@@ -80,12 +80,12 @@ class TimetrackServiceProvider extends ServiceProvider
      */
     public function registerTranslations()
     {
-        $langPath = resource_path('lang/modules/timetrack');
+        $langPath = resource_path('lang/modules/timetracker');
 
         if (is_dir($langPath)) {
-            $this->loadTranslationsFrom($langPath, 'timetrack');
+            $this->loadTranslationsFrom($langPath, 'timetracker');
         } else {
-            $this->loadTranslationsFrom(__DIR__ .'/../Resources/lang', 'timetrack');
+            $this->loadTranslationsFrom(__DIR__ .'/../Resources/lang', 'timetracker');
         }
     }
 

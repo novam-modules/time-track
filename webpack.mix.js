@@ -3,8 +3,8 @@ require('laravel-mix-merge-manifest');
 
 mix.setPublicPath('../../public').mergeManifest();
 
-mix.js(__dirname + '/Resources/assets/js/app.js', 'js/timetrack.js')
-    .sass( __dirname + '/Resources/assets/sass/app.scss', 'css/timetrack.css');
+mix.js(__dirname + '/Resources/assets/js/app.js', 'js/timetracker.js')
+    .sass( __dirname + '/Resources/assets/sass/app.scss', 'css/timetracker.css');
 
 if (mix.inProduction()) {
     mix.version();

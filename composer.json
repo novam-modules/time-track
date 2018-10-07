@@ -1,5 +1,5 @@
 {
-    "name": "novam-modules/timetrack",
+    "name": "novam-modules/timetrackerer",
     "description": "",
     "authors": [
         {
@@ -10,16 +10,16 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Admin\\Timetrack\\Providers\\TimetrackServiceProvider"
+                "Admin\\TimeTracker\\Providers\\TimeTrackerServiceProvider"
             ],
             "aliases": {
-                
+
             }
         }
     },
     "autoload": {
         "psr-4": {
-            "Admin\\Timetrack\\": ""
+            "Admin\\TimeTracker\\": ""
         }
     }
 }

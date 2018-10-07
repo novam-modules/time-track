@@ -1,11 +1,11 @@
 <?php
 
-namespace Admin\Timetrack\Database\Seeders;
+namespace Admin\TimeTracker\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
-class TimetrackDatabaseSeeder extends Seeder
+class TimeTrackerDatabaseSeeder extends Seeder
 {
     /**
      * Run the database seeds.

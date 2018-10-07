@@ -1,4 +1,4 @@
-@extends('timetrack::layouts.master')
+@extends('timetracker::layouts.master')
 
 @section('content')
     <h1>Time Sheet</h1>

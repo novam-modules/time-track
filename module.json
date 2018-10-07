@@ -1,12 +1,12 @@
 {
-    "name": "Timetrack",
-    "alias": "timetrack",
+    "name": "TimeTracker",
+    "alias": "timetracker",
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
-        "Admin\\Timetrack\\Providers\\TimetrackServiceProvider"
+        "Admin\\TimeTracker\\Providers\\TimeTrackerServiceProvider"
     ],
     "aliases": {},
     "files": [
