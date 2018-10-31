@@ -6,11 +6,9 @@
     "active": 1,
     "order": 0,
     "providers": [
-        "Admin\\TimeTracker\\Providers\\TimeTrackerServiceProvider"
+        "Modules\\TimeTracker\\Providers\\TimeTrackerServiceProvider"
     ],
     "aliases": {},
-    "files": [
-        "start.php"
-    ],
+    "files": [],
     "requires": []
 }

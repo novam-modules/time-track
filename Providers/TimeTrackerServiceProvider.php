@@ -1,6 +1,6 @@
 <?php
 
-namespace Admin\TimeTracker\Providers;
+namespace Modules\TimeTracker\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
