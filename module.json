@@ -9,8 +9,6 @@
         "Modules\\TimeTracker\\Providers\\TimeTrackerServiceProvider"
     ],
     "aliases": {},
-    "files": [
-        "start.php"
-    ],
+    "files": [],
     "requires": []
 }
