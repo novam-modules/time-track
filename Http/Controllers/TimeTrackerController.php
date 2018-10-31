@@ -1,6 +1,6 @@
 <?php
 
-namespace Admin\TimeTracker\Http\Controllers;
+namespace Modules\TimeTracker\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
